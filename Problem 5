@@ -1,0 +1,49 @@
+ public static void main(String[] args){
+      double x,y,z;
+      Scanner sc= new Scanner(System.in);
+      System.out.println("Enter the numbers and the operation you wanna perform");
+      x=sc.nextInt();
+      y=sc.nextInt();
+      z=sc.nextInt();
+      if(z==1){
+          System.out.println(x+y);
+
+
+      }
+      else if(z==2){
+          System.out.println(x-y);
+      }
+      else if(z==3){
+          System.out.println(x*y);
+
+      }
+      else if(z==4){
+          System.out.println(x/y);
+      }
+      else if(z==5){
+          double radians = Math.toRadians(x);
+          double radians1 = Math.toRadians(y);
+          System.out.println(Math.sin(radians));
+          System.out.println(Math.sin(radians1));
+
+      }
+      else if(z==6){
+          double radians =Math.toRadians(x);
+          double radians1=Math.toRadians(y);
+          System.out.println(Math.cos(radians));
+          System.out.println(Math.cos(radians1));
+
+      }
+      else if(z==7){
+          double radians =Math.toRadians(x);
+          double radians1=Math.toRadians(y);
+          System.out.println(Math.tan(radians));
+          System.out.println(Math.tan(radians1));
+
+      }
+      else if(z==8){
+          System.out.println(Math.pow(x,y));
+      }
+
+
+    }
