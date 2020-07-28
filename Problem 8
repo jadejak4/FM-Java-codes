@@ -1,0 +1,52 @@
+public static void main(String args[]){
+       long start=0,end=0;
+       Scanner sc=new Scanner(System.in);
+       while (true) {
+           System.out.println("Enter input");
+           int a = sc.nextInt();
+           if (a == 1) {
+               AE(a);
+           } else if (a == 2) {
+               EE(a);
+           }
+           else if(a==0){
+               System.exit(0);
+           }
+       }
+
+
+   }
+   public static void AE(int a){
+       Scanner sc=new Scanner(System.in);
+       long start=0,end=0;
+       if(a==1){
+           start=System.currentTimeMillis();
+           System.out.println("To stop the timer press 1");
+
+       }
+       int b=sc.nextInt();
+       if(b==1){
+            end=System.currentTimeMillis();
+
+       }
+
+       long lol=end-start;
+       System.out.println("The time taken in this event was "+lol+"ms");
+   }
+   public static void EE(int a){
+       long start=System.currentTimeMillis();
+       Scanner sc=new Scanner(System.in);
+       int b;
+       while (true){
+           System.out.println("Enter 1 when you wanna record the time");
+           b=sc.nextInt();
+           if(b==1){
+               long lol=System.currentTimeMillis();
+               System.out.println("The lap time was "+(lol-start));
+               start=lol;
+           }
+           if (b==2){
+               break;
+           }
+       }
+   }
