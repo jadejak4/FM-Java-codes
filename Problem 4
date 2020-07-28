@@ -1,0 +1,27 @@
+SELECTION SORTING IN ARRAYS
+int x, y;
+        int[] lol = new int[10];
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the elements of an array");
+        for (x = 0; x < 5; x++) {
+            lol[x] = sc.nextInt();
+        }
+        int smol;
+        int pos;
+        for (x = 0; x < 5; x++) {
+            smol = lol[x];
+            pos = x;
+            for (y = x; y < 5; y++) {
+                if (lol[y] <lol[x]) {
+                    pos = y;
+                    smol = lol[y];
+                }
+
+
+            }
+            int temp = lol[x];
+            lol[x] = smol;
+            lol[pos] = temp;
+        }
+        for (x = 0; x < 5; x++) {
+            System.out.print(lol[x]);
