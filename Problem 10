@@ -1,0 +1,13 @@
+ Scanner sc= new Scanner(System.in);
+ System.out.println("Enter two numbers");
+ x=sc.nextInt();
+ y=sc.nextInt();
+ int count=0;
+ while(y<x){
+     count++;
+     y++;
+
+
+ }
+
+Finding difference without minus operator 
