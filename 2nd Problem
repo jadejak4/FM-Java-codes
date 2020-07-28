@@ -1,0 +1,35 @@
+INPUT THRU INPUT STREAMER CLASS
+
+
+Code
+import java.io.*;
+public class ques4
+{
+    public static void main(String [] args) throws IOException
+    {
+        String s;
+        BufferedReader ob = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Enter a string");
+        s = ob.readLine();
+        System.out.println("You entered String "+s);
+    }
+
+}
+
+
+INPUT THRU SCANNER CLASS
+import java.util.*;
+
+public class ques {
+
+        public static void main(String[] args) {
+            String s;
+            Scanner ob = new Scanner(System.in);
+            System.out.println("Enter a string");
+            s = ob.nextLine();
+            System.out.println("You entered String " + s);
+        }
+
+    }
+
+
