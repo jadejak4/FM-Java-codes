@@ -1,0 +1,35 @@
+
+COMPARING WHILE IGNORING CASE.
+
+public static void main(String[] args) {
+        String str1, str2;
+        System.out.println("Enter two strings");
+        Scanner sc = new Scanner(System.in);
+        str1 = sc.nextLine();
+        str2 = sc.nextLine();
+        int lol=comapre(str1,str2);
+    }
+    public static int comapre(String str1,String str2){
+        int num=str1.compareToIgnoreCase(str2);
+        System.out.print(num);
+        return num;
+
+    }
+    
+    COMAPRING WHEN NOT IGNORING CASE.
+    
+    public static void main(String[] args) {
+        String str1, str2;
+        System.out.println("Enter two strings");
+        Scanner sc = new Scanner(System.in);
+        str1 = sc.nextLine();
+        str2 = sc.nextLine();
+        int lol=comapre(str1,str2);
+    }
+    public static int comapre(String str1,String str2){
+        int num=str1.equals(str2);
+        System.out.print(num);
+        return num;
+
+    }
+    
