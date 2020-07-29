@@ -1,0 +1,30 @@
+ package myPackage;
+import java.lang.*;
+class MITstudent{
+    public static void main(String[] args) {
+        student Krishna=new student("Krishna",190907282,"ECE");
+        student Arya=new student("Arya",190907382,"ECE");
+        student Shuvam=new student("Shuvam",190905408,"CSE");
+        Krishna.print_info();
+        Arya.print_info();
+        Shuvam.print_info();
+
+
+    }
+}
+class student{
+    private String Name;
+    private int reg_no;
+    private String branch;
+    public student(String Name,int regno,String Branch){
+        this.Name=Name;
+        this.reg_no=regno;
+        this.branch=Branch;
+
+
+
+    }
+    public void print_info(){
+        System.out.println(Name+" with registration number "+reg_no+" part of "+branch);
+    }
+}
