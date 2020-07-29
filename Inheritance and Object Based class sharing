@@ -1,0 +1,54 @@
+Object based
+
+
+PRINT_HW
+import java.util.*;
+import beta.print_intro;
+
+public class print_hw {
+    public static void main(String[] args) {
+        print_hw obj1=new print_hw();
+        print_intro obj2=new print_intro();
+
+
+    }
+    public print_hw(){
+        System.out.println("Hello World");
+    }
+
+}
+PRINT_INTRO
+package beta;
+
+public class print_intro {
+    public print_intro(){
+        System.out.println("I am a student of MIT");
+    }
+}
+
+
+INHERITANCE BASED.
+
+import beta.print_intro;
+
+import java.util.*;
+public class print_hw {
+    public static void main(String[] args) {
+        print_hw obj1=new print_hw();
+        printintro obj2=new printintro();
+        
+
+
+    }
+    public print_hw(){
+        System.out.println("Hello World");
+    }
+
+}
+class printintro extends print_intro {
+    public printintro() {
+        super();
+
+    }
+
+}
