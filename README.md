@@ -1,2 +1,3 @@
 # FM-Java-codes
-This is meant to contain all the basic java codes that were writtem based on the basic Java problems given to us.
+#####These are the solutions to the basic Java programs given with the intent of making the juniors familiar with the language.
+
